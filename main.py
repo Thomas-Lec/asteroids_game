@@ -1,6 +1,6 @@
 import pygame  # import pygame
 
-from constants import *
+from constants import *  # import constants
 
 
 def main():
