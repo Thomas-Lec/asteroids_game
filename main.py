@@ -1,6 +1,7 @@
 import pygame  # import pygame
 
 from constants import *  # import all constants
+from player import Player
 
 
 def main():
@@ -14,6 +15,7 @@ def main():
             if event.type == pygame.QUIT:
                 return
 
+        Player.update(dt)
         screen.fill("black")
         pygame.display.flip()
 
@@ -24,4 +26,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
